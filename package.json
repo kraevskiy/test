@@ -1,18 +1,9 @@
 {
   "name": "gulp-starter-kit",
-  "version": "3.0.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "Gulp Starter Kit for front-end developers.",
-  "bugs": {
-    "url": "https://github.com/nstungcom/gulp-starter-kit/issues",
-    "email": "hi@nstung.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nstungcom/gulp-starter-kit.git"
-  },
+  "description": ".",
   "license": "MIT",
-  "author": "Son Tung Ngo <hi@nstung.com>",
   "main": "gulpfile.babel.js",
   "engines": {
     "node": ">=8"
@@ -28,7 +19,10 @@
     "fix-css": "stylelint \"src/**/*.{css,scss}\" --fix || exit 0",
     "fix-js": "eslint \"src/**/*.js\" --fix || exit 0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "rfs": "^9.0.3"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",

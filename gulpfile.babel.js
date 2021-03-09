@@ -144,7 +144,7 @@ function liveReload (done) {
 function watchFiles (done) {
   gulp.watch(PATHS.assets, copyAssets)
   gulp.watch(PATHS.staticFiles, copyStaticFiles)
-  gulp.watch('src/assets/scss/**/*.{css,scss}', gulp.series(css, liveReload))
+  gulp.watch('src/assets/scss/**/*.{css,scss,sass}', gulp.series(css, liveReload))
   gulp.watch('src/assets/js/**/*.js', gulp.series(js, liveReload))
   gulp.watch('src/assets/img/**/*', gulp.series(images, liveReload))
   gulp.watch(['src/**/*.{html,md,njk}', 'src/**/*.json'], liveReload)
